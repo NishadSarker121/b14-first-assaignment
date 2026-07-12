@@ -85,7 +85,7 @@ nav a{
 /* Start hero section css */
 .hero{
     height: 100vh;
-    background: url(/images/banner.jpg);
+    background: url(images/banner.jpg);
      background-size: cover;
     background-position: center;
     position: relative;
