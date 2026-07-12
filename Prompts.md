@@ -1,0 +1,1 @@
+upload figma file ,now i create header section, banner section,pricing section,,so now create next section and section look that professional or premium .just need html ,css code..others code not needed
