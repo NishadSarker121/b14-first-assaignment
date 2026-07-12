@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #fff;
+    color: #111;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* navbar */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text h3{
+    font-size: 18px;
+
+}
+
+.logo-text span{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    gap: 35px;
+}
+
+nav a{
+    color: #444;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #8c4fc6;
+}
+.btn{
+    background-color: #2f55ff;
+    color: #fff;
+    font-size: large;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border-style: none;
+}
+.btn a{
+    color: #fff;
+}
+
+/* Start hero section css */
+.hero{
+    height: 100vh;
+    background: url(/images/banner.jpg);
+     background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.overlay{
+    position: absolute;
+}
+.hero-content{
+    position: relative;
+    z-index: 10;
+    width: 750px;
+    color: #fff;
+}
+
+.hero-content h1{
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-content span{
+    font-style: italic;
+
+}
+.hero-content p{
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/*  end hero section css*/
+
+/* start speakers */
+
+.speakers{
+    padding: 100px 0;
+    background: #fff;
+
+}
+.speakers h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.speaker-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.card{
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+.card:hover{
+    transform: translatey(-10px);
+}
+
+.card img{
+    height: 300px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 25px;
+}
+.card-content span{
+    color: #2f55ff;
+    font-size: 12px;
+    font-weight: 700px;
+}
+
+.card-content h3{
+    margin: 12px 0;
+    font-size: 28px;
+
+}
+
+.card-content p{
+    color: #666;
+}
+
+/* end  speakers */
+
+/* start css pricing */
+
+.pricing{
+    padding: 100px 0;
+    background: #fafafa;
+}
+
+.pricing h2{
+    font-size: 50px;
+    text-align: center;
+
+}
+.sub{
+    text-align: center;
+    margin: 20px 0 60px;
+    color: #666;
+}
+
+.price-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+
+}
+
+.price-card{
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+.active{
+    background: #081a34;
+    color: #eadfdf;
+
+}
+
+.price-card h4{
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.active h4{
+    color: #ddd;
+}
+
+.price-card h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+
+}
+
+.price-card ul{
+    margin-bottom: 30px;
+
+}
+.price-card ul li{
+    margin: 15px 0;
+}
+
+.btn1{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid rgb(89, 99, 194);
+    color: rgb(72, 72, 182);
+    border-radius: 8px;
+    font-weight: 600;
+}
+.btn2{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background: #2f55ff;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.btn3{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid black;
+    color: #201e1e;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* last section css */
+/* =========================
+      WHY ATTEND SECTION
+========================= */
+
+.why-attend{
+    padding:120px 0;
+    background:#f8fafc;
+}
+
+.section-title{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 70px;
+}
+
+.section-title h2{
+    font-size:52px;
+    font-weight:700;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    font-size:18px;
+    color:#64748b;
+    line-height:1.8;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.feature-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+    border:1px solid #e5e7eb;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(37,99,235,0.15);
+}
+
+.icon{
+    width:70px;
+    height:70px;
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.feature-card h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.feature-card p{
+    color:#64748b;
+    line-height:1.8;
+    font-size:15px;
+}
